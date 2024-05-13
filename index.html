@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <script href="./script.js" defer></script>
-  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 
 <body>
@@ -14,39 +13,52 @@
   <main>
     <section class="banner">
       <section class="logo">
-        <img src="./assets/images/odin-logo.png" alt="Odin Logo">
+        <img class="logo" src="./assets/images/odin-logo.png" alt="Odin Logo">
         <h1 class="logo-text">ODIN</h1>
       </section>
-      <p class="credit">Photo by
-        <a href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noopener noreferrer">Halie West</a> on
-        <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>
+      <p class="credit">
+        <span>
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noopener noreferrer">Halie West</a> on
+          <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>
+        </span>
       </p>
     </section>
     <section class="form">
-      <article>
+      <article class="introduction">
         <p>This is not a real online service! You know you need something like this in your life to help you realize
-          your deepest dreams. Sign up now to get started.</p>
-        <p>You know you want to.</p>
+          your deepest dreams. Sign up <span>now</span> to get started.</p>
+        <p>You <span>know</span> you want to.</p>
       </article>
+
       <section class="form-body">
-        <h1>Let's do this</h1>
-        <section class="form-elemenents">
-          <label for="">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name">
-          <label for="">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name">
-          <label for="">EMAIL</label>
-          <input type="text" name="email" id="email">
-          <label for="">PHONE NUMBER</label>
-          <input type="text" name="phone-number" id="phone-number">
-          <label for="">PASSWORD</label>
-          <input type="text" name="password" id="password">
-          <label for="">CONFIRM PASSWORD</label>
-          <input type="text" name="confirm-password" id="confirm-password">
+        <h1 class="call-to-action">Let's do this!</h1>
+        <section class="form-elements">
+          <label for="first-name">FIRST NAME
+            <input type="text" name="first-name" id="first-name">
+          </label>
+          <label for="last-name">LAST NAME
+            <input type="text" name="last-name" id="last-name">
+          </label>
+          <label for="email">EMAIL
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          </label>
+          <label for="phone-number">PHONE NUMBER
+            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          </label>
+          <label for="password">PASSWORD
+            <input type="password" name="password" id="password">
+          </label>
+          <label for="confirm-password">CONFIRM PASSWORD
+            <input type="password" name="confirm-password" id="confirm-password">
+          </label>
         </section>
+      </section>
+      <section class="submit">
         <button type="submit">Create Account</button>
         <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a></p>
       </section>
+    </section>
     </section>
   </main>
 
