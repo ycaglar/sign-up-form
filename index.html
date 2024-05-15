@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -44,7 +45,8 @@
             <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
           </label>
           <label for="phone-number">PHONE NUMBER
-            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890">
           </label>
           <label for="password">PASSWORD
             <input type="password" name="password" id="password">

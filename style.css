@@ -192,9 +192,6 @@ input:invalid {
   outline: red 1px solid;
 }
 
-/* input:valid:not(:empty) {
-  outline: green 1px solid;
-} */
 section.submit {
   padding-left: 3vw;
 }
